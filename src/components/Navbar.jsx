@@ -37,7 +37,7 @@ const Navbar = () => {
                         <Link to="/" className="flex items-center gap-2">
                             <UtensilsCrossed className="text-red-500 w-8 h-8" />
                             <span className="text-2xl font-black tracking-tighter text-white">
-                                JB <span className="text-orange-500">MOMOS</span>
+                                JB <span className="text-orange-500">MOMOS HUB</span>
                             </span>
                         </Link>
                     </motion.div>
