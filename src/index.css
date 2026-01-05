@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --bg-dark: #0f0f0f;
+  --accent-red: #e63946;
+  --accent-orange: #f4a261;
+  --accent-yellow: #e9c46a;
+  --text-light: #f1faee;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0f0f0f] text-[#f1faee] font-sans overflow-x-hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg shadow-red-900/20;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-transparent border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 active:scale-95;
+  }
+
+  .glass-nav {
+    @apply bg-black/80 backdrop-blur-md border-b border-white/10;
+  }
+
+  .food-card {
+    @apply bg-neutral-900 border border-white/5 rounded-3xl p-6 transition-all duration-300 hover:border-orange-500/50 hover:shadow-2xl hover:shadow-orange-500/10;
+  }
+}
+
+/* Custom foody typography */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap');
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500;
+}
