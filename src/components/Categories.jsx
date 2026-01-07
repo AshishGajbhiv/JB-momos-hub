@@ -67,7 +67,7 @@ const Categories = () => {
                                         <h3 className="text-2xl font-bold text-white mb-1">{cat.name}</h3>
                                         <p className="text-gray-500 text-sm font-medium">Explore Variety</p>
                                     </div>
-                                    <div className="text-5xl group-hover:scale-125 transition-transform duration-500 grayscale group-hover:grayscale-0">
+                                    <div className="text-5xl group-hover:scale-125 transition-transform duration-500">
                                         {cat.emoji}
                                     </div>
                                 </div>
