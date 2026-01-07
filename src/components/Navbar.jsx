@@ -95,11 +95,6 @@ const Navbar = () => {
                                     {link.name}
                                 </Link>
                             ))}
-                            <div className="px-3 pt-4">
-                                <Link to="/menu" onClick={() => setIsOpen(false)}>
-                                    <button className="w-full btn-primary">Order Now</button>
-                                </Link>
-                            </div>
                         </div>
                     </motion.div>
                 )}
